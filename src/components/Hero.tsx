@@ -5,18 +5,17 @@ export default function Hero() {
 
 <div className="overflow-x-hidden relative">
 <div className="relative w-full">
- {/* Responsive image */}
  <Image
  src={"/hero/hero.image.jpg"}
  alt="Hero Image"
- width={1200}
- height={100}
+ width={1100}
+ height={700}
  priority
  className="w-full h-auto"
  
  />
  {/* Hero Text Section */}
- <div className="bg-[#FFF3E3] hidden md:block w-[643] h-[443] absolute top-[20%] left-[55%] rounded-lg px-2 py-3">
+ <div className="bg-[#FFF3E3] hidden md:block w-[643] h-[400] absolute top-[20%] left-[55%] rounded-lg px-2 py-3">
  <h6 className="font-bold ml-6">New Arrival</h6>
  <h3 className="text-[#B88E2F] ml-6 flex justify-center font-poppins font-extrabold text-[3.25rem] ">Discover Our <br /> New Collection</h3>
  <p className="leading-loose ml-6 font-poppins font-medium text-[1rem] mb-3">

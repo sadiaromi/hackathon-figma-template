@@ -8,13 +8,15 @@ import { RiCustomerService2Line } from "react-icons/ri";
 
 export default function Cart() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
+      <div className="bg-[#fdf7f1] py-12 mb-12">
+        <div className="max-w-7xl mx-auto px-4">
+          <h1 className="text-4xl font-bold text-center mb-2">Cart</h1>
+          <div className="flex items-center justify-center space-x-2 text-sm"></div>
 
-      {/* Cart Header */}
-      <div className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center space-x-2 mt-4">
-            <Link href="/" className="text-gray-600">Home</Link>
+          <div className="flex items-center justify-center space-x-2 text-sm">
+            
+            <Link href="/" className="text-[#000000]">Home</Link>
             <span className="text-gray-400">&gt;</span>
             <span className="text-gray-900">Cart</span>
           </div>
@@ -36,7 +38,12 @@ export default function Cart() {
             <div className="mt-4 border rounded-lg p-4">
               <div className="grid grid-cols-4 gap-4 items-center">
                 <div className="flex items-center space-x-4">
-                  <Image src="/cart.images/cart.img (2).png" alt="Product" width={100} height={100} className="rounded-lg" />
+                  <Image
+                   src="/cart.images/cart.img-1.png" 
+                   alt="Product" 
+                   width={100} 
+                   height={100} 
+                   className="rounded-lg" />
                   <span className="text-sm text-gray-600">Asgaard sofa</span>
                 </div>
                 <div className="text-sm">Rs. 250,000.00</div>
@@ -59,7 +66,7 @@ export default function Cart() {
                   <span>Total</span>
                   <span>Rs. 250,000.00</span>
                 </div>
-                <button className="w-full bg-white text-gray-900 py-3 rounded-lg hover:bg-gray-50 transition-colors">
+                <button className="w-full bg-[#fdf7f1] border-2  border-black text-gray-900 py-3 rounded-lg hover:bg-gray-50 transition-colors">
                   Check Out
                 </button>
               </div>
@@ -67,7 +74,7 @@ export default function Cart() {
           </div>
         </div>
       </div>
-
+      {/* Features Section */}
       <footer className="bg-[#fdf7f1] py-8">
         <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>

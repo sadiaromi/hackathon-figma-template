@@ -27,11 +27,13 @@ export default function BeautifulRooms() {
  {/* Main Image */}
  <div className="relative w-[404px] h-[582px] overflow-hidden ">
 
- <Image src="/inspiration.images/inspiration-1.png"
+ <Image 
+ src="/inspiration.images/inspiration-1.png"
  alt="Inner Peace"
  className="w-full h-full object-cover"
- width={900} height={100}
- ></Image>
+ width={900} 
+ height={100}
+ />
  <div className="absolute bottom-6 left-6 bg-white bg-opacity-70 p-8 ">
  <p className="text-[16px] font-medium text-Gray2">
  01 —— Bed Room
@@ -53,10 +55,12 @@ export default function BeautifulRooms() {
  <div className="flex h-[486px] gap-[24px] ">
  <div className="w-[372px] overflow-hidden">
 
- <Image src="/inspiration.images/inspiration-2.png"
+ <Image
+  src="/inspiration.images/inspiration-2.png"
  alt="Modern Vibes"
  className="object-cover"
- width={900} height={100}></Image>
+ width={900} 
+ height={100}/>
  </div>
  <div className="w-fit h-[450px] overflow-hidden">
 

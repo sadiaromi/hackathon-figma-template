@@ -1,11 +1,8 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
+import { Search, User, Heart, ShoppingCart } from 'lucide-react'
 import { useState } from 'react';
-import { VscAccount } from "react-icons/vsc";
-import { CiSearch } from "react-icons/ci";
-import { FaRegHeart } from "react-icons/fa";
-import { IoCartOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 
@@ -42,19 +39,35 @@ export default function Header() {
  <li className='p-4 hover:underline underline-offset-2'>
  <Link href="/shop">Shop</Link>
  </li>
- <li className='p-4 hover:underline underline-offset-2'>Blog
+ <li className='p-4 hover:underline underline-offset-2'>
+ <Link href="/blog">Blog</Link>
  </li>
  <li className='p-4 hover:underline underline-offset-2'>
  <Link href="/contact">Contact</Link>
  </li>
  </ul>
  </div>
-
  <div className='flex gap-x-4 items-center'>
- <VscAccount className="w-10 h-6 flex-none flex-grow-0 order-1"/>
- <CiSearch className="w-10 h-6 flex-none flex-grow-0 order-1"/>
-<FaRegHeart className="w-10 h-6 flex-none flex-grow-0 order-1"/>
-<Link href="/cart"><IoCartOutline className="w-10 h-6 flex-none flex-grow-0 order-1"/></Link>
+
+            <button className="w-8 h-8 flex items-center justify-center">
+              <User className="h-5 w-5" />
+              <span className="sr-only">Account</span>
+            </button>
+            <button className="w-8 h-8 flex items-center justify-center">
+              <Search className="h-5 w-5" />
+              <span className="sr-only">Search</span>
+            </button>
+            <button className="w-8 h-8 flex items-center justify-center">
+              <Heart className="h-5 w-5" />
+              <span className="sr-only">Wishlist</span>
+            </button>
+            <button className="w-8 h-8 flex items-center justify-center">
+        <Link href="/cart"><ShoppingCart className="h-5 w-5" />
+              <span className="sr-only">Cart</span></Link>
+            </button>
+          </div>
+
+ 
 <button
  className="text-black block md:hidden text-3xl z-50"
  onClick={toggle}
@@ -65,7 +78,6 @@ export default function Header() {
  
  </div>
 
- </div>
  </div>
  </main>
  );

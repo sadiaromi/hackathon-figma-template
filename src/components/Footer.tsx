@@ -1,12 +1,12 @@
 export default function Footer() {
     return (
-    <footer className="bg-gray-100 py-5">
+    <footer className="bg-[#FFFFFF] py-5">
     <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
     
     
     <div>
     <h3 className="font-semibold text-lg text-[#000000]">Funiro.</h3>
-    <p className="text-[#616161]">
+    <p className="text-[#616161] mt-8">
     400 University Drive Suite 200 Coral Gables,
     <br /> FL 33134 USA.
     </p>
@@ -86,7 +86,7 @@ export default function Footer() {
     
     
     <div className="text-center text-[#000000] mt-8">
-    © 2024 Funiro. All rights reserved.
+    &copy; 2024 Funiro. All rights reserved.
     </div>
     </footer>
     );
