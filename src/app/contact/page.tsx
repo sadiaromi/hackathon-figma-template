@@ -8,21 +8,26 @@ import { RiCustomerService2Line } from "react-icons/ri";
 
 export default function Contact() {
   return (
+    
     <main className="min-h-screen">
-      <div className="bg-[#fdf7f1] py-12 mb-12">
-        <div className="max-w-7xl mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-2">Contact</h1>
-          <div className="flex items-center justify-center space-x-2 text-sm">
-            <Link href="/" className="hover:underline">Home</Link>
-            <span>/</span>
-            <span className="text-gray-500">Contact</span>
+      <div className="relative h-[150px] sm:h-[200px] md:h-[250px] bg-[url('/bg-image/bg.image.png')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="container mx-auto px-4">
+          <div className="relative pt-12 sm:pt-16 md:pt-20 text-center text-white">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Contact</h1>
+            <div className="mt-2 sm:mt-4 flex items-center justify-center gap-2 text-sm sm:text-base">
+            <Link href="/" className="hover:underline"><span>Home</span></Link>
+              <span>{">"}</span>
+              <Link href="/contact" className="hover:underline"><span>Contact</span></Link>
+            </div>
           </div>
         </div>
       </div>
 
+
       <div className="max-w-7xl mx-auto px-4 mb-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Get In Touch With Us</h2>
+          <h2 className="text-3xl font-bold mb-4 mt-10">Get In Touch With Us</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             For More Information About Our Product & Services. Please Feel Free To Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!
           </p>

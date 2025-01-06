@@ -1,7 +1,10 @@
-import { BlogCard } from "@/components/Blog-card"
-import { Features } from "@/components/Features"
-import { PageHeader } from "@/components/Page-header"
-import { Sidebar } from "@/components/Sidebar"
+import { BlogCard } from "@/components/Blog-card";
+import { PageHeader } from "@/components/Page-header";
+import { Sidebar } from "@/components/Sidebar";
+import { GoTrophy } from "react-icons/go";
+import { AiOutlineSafetyCertificate } from "react-icons/ai";
+import { MdOutlineLocalShipping } from "react-icons/md";
+import { RiCustomerService2Line } from "react-icons/ri";
 
 
 const posts = [
@@ -96,9 +99,9 @@ export default function Blog() {
               ))}
               <div className="flex justify-center space-x-4  ml-56 mt-8">
                 <button className="px-4 py-2 bg-[#B88E2F] text-white rounded">1</button>
-                <button className="px-4 py-2 hover:bg-[#fdf7f1] rounded">2</button>
-                <button className="px-4 py-2 hover:bg-[#fdf7f1] rounded">3</button>
-                <button className="px-4 py-2 hover:bg-[#fdf7f1] rounded">Next</button>
+                <button className="px-4 py-2 hover:bg-[#B88E2F] rounded">2</button>
+                <button className="px-4 py-2 hover:bg-[#B88E2F] rounded">3</button>
+                <button className="px-4 py-2 hover:bg-[#B88E2F] rounded">Next</button>
               </div>
             </div>
             <div>
@@ -106,7 +109,34 @@ export default function Blog() {
             </div>
           </div>
         </div>
-        <Features />
+        {/* Features Section */}
+              <footer className="bg-[#fdf7f1] py-8">
+                <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                  <div>
+                    <GoTrophy size={40} className="mx-auto text-gray-800" />
+                    <h4 className="font-bold text-gray-800">High Quality</h4>
+                    <p className="text-gray-600 text-sm">Crafted from top materials</p>
+                  </div>
+                  <div>
+                    <AiOutlineSafetyCertificate
+                      size={40}
+                      className="mx-auto text-gray-800"
+                    />
+                    <h4 className="font-bold text-gray-800">Warranty Protection</h4>
+                    <p className="text-gray-600 text-sm">Over 2 years</p>
+                  </div>
+                  <div>
+                    <MdOutlineLocalShipping size={40} className="mx-auto text-gray-800" />
+                    <h4 className="font-bold text-gray-800">Free Shipping</h4>
+                    <p className="text-gray-600 text-sm">Orders over $50</p>
+                  </div>
+                  <div>
+                    <RiCustomerService2Line size={40} className="mx-auto text-gray-800" />
+                    <h4 className="font-bold text-gray-800">24/7 Support</h4>
+                    <p className="text-gray-600 text-sm">Dedicated support</p>
+                  </div>
+                </div>
+              </footer>
       </main>
 </div>
 )

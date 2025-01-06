@@ -8,13 +8,16 @@ import { RiCustomerService2Line } from "react-icons/ri";
 export default function Shop() {
   return (
     <main className="min-h-screen bg-white">
-      <div className="relative h-48 bg-[#fdf7f1]">
-        <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 className="text-4xl font-semibold mb-2">Shop</h1>
-          <div className="flex items-center space-x-2 text-sm text-gray-600">
-          <Link href="/" className="hover:underline">Home</Link>
-            <span>/</span>
-            <span>Shop</span>
+      <div className="relative h-[150px] sm:h-[200px] md:h-[250px] bg-[url('/bg-image/bg.image.png')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="container mx-auto px-4">
+          <div className="relative pt-12 sm:pt-16 md:pt-20 text-center text-white">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Shop</h1>
+            <div className="mt-2 sm:mt-4 flex items-center justify-center gap-2 text-sm sm:text-base">
+            <Link href="/" className="hover:underline"><span>Home</span></Link>
+              <span>{">"}</span>
+              <Link href="/shop" className="hover:underline"><span>Shop</span></Link>
+            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 
 interface Category {
@@ -38,12 +37,7 @@ export function Sidebar({ categories, recentPosts }: SidebarProps) {
                 key={category.name}
                 className="flex justify-between items-center"
               >
-                <Link
-                  href={`/category/${category.name.toLowerCase()}`}
-                  className="hover:underline"
-                >
-                  {category.name}
-                </Link>
+                <span>{category.name}</span>
                 <span className="text-gray-500">({category.count})</span>
               </li>
             ))}
@@ -63,12 +57,7 @@ export function Sidebar({ categories, recentPosts }: SidebarProps) {
               className="w-20 h-20 object-cover rounded"
             />
             <div>
-              <Link
-                href={`/blog/${post.slug}`}
-                className="font-medium hover:underline"
-              >
-                {post.title}
-              </Link>
+              <span className="font-medium">{post.title}</span>
               <p className="text-sm text-gray-500">{post.date}</p>
             </div>
           </div>
