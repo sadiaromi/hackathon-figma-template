@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
-import Browse from "@/components/Browse"
-import Products from "@/components/Products"
+import Browse from "@/components/Browse";
+import FeaturedProducts from "@/components/FeaturedProducts";
 import Furniture from "@/components/Furniture";
 import BeautifulRooms from "@/components/BeautifulRooms";
 
@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Hero />
       <Browse />
-      <Products />
+     <FeaturedProducts />
       <BeautifulRooms />
       <Furniture />
     </div>
